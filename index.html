@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ViVuViet</title>
+    <link rel="stylesheet" type="text/css" href="styles/css/main_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/Animation.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script>
+        window.onscroll = function () {
+            scrollFunction(),
+                backTop()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
+                $(document).ready(function () {
+                    $(".top_bar").hide('slow');
+                });
+
+            } else {
+                $(document).ready(function () {
+                    $(".top_bar").show();
+                });
+            }
+        }
+
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+        $(document).ready(function () {
+            $(".search__item").click(function () {
+                $(".input_search").toggle("slow");
+            });
+        })
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+      
+
+        <div class="main_nav">
+            <div class="main_nav__logo"><a href="#"><img src="styles/images/logo1.jpg" width="75px" height="75px" alt="logo"></a></div>
+            <div class="main_nav__menu">
+                <ul class="main_nav__list">
+                    <li class="main_nav__item"><a href="index.html">TRANG CHỦ</a></li>
+                    <li class="main_nav__item"><a href="#">GIỚI THIỆU </a></li>
+                    <li class="main_nav__item"><a href="#">TUYỂN SINH</a></li>
+                    <li class="main_nav__item"><a href="#">ĐÀO TẠO</a></li>
+                    <li class="main_nav__item"><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+            <div class="main_nav__search">
+                <form action=""><input class="input_search" type="text"></form>
+                <div class="search__item"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <!--slider-->
+        <div class="main__slide">
+            <div class="home_slide__item">
+                <div class="home_slide__background"
+                     style="background-image: url(styles/images/banner1.jpg)"></div>
+                <div class="home_slider__content">
+                    <div class="home_slider_content_inner animated bounceInLeft">
+                        <h1>TRƯỜNG</h1>
+                        <h1>ĐẠI HỌC CÔNG NGHỆ ĐÔNG Á</h1>
+                        <div class="button home_slider__button">
+                            <div class="button_bcg"></div>
+                            <a href="#">Xem ngay<span></span><span></span><span></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_slide__item">
+                <div class="home_slide__background"
+                     style="background-image: url(styles/images/banner2.jpg)"></div>
+                <div class="home_slider__content">
+                    <div class="home_slider_content_inner animated bounceInRight">
+                        <h1>TRƯỜNG</h1>
+                        <h1>ĐẠI HỌC CÔNG NGHỆ ĐÔNG Á</h1>
+                        <div class="button home_slider__button">
+                            <div class="button_bcg"></div>
+                            <a href="#">Xem ngay<span></span><span></span><span></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_slide__item">
+                <div class="home_slide__background"
+                     style="background-image: url(styles/images/banner3.jpg)"></div>
+                <div class="home_slider__content">
+                    <div class="home_slider_content_inner animated bounceInDown">
+                        <h1>TRƯỜNG</h1>
+                        <h1>ĐẠI HỌC CÔNG NGHỆ ĐÔNG Á</h1>
+                        <div class="button home_slider__button">
+                            <div class="button_bcg"></div>
+                            <a href="#">Xem ngay<span></span><span></span><span></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_slide__nav nav__prev"><i onclick="plusSlides(-1)" class="fas fa-chevron-circle-left"></i>
+            </div>
+            <div class="main_slide__nav nav__next"><i onclick="plusSlides(1)"
+                                                      class="fas fa-chevron-circle-right"></i></i>
+            </div>
+            <div class="main_slide__dots">
+                <ul class="customs_dots">
+                    <li class="customs_dot active" onclick="currentSlide(1)">01.</li>
+                    <li class="customs_dot" onclick="currentSlide(2)">02.</li>
+                    <li class="customs_dot" onclick="currentSlide(3)">03.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_search">
+            <div id="tabs" class="main_search__tabs">
+                <ul class="search_tabs__list">
+  
+                </ul>
+                <div id="tabs-1" class="tabs_content animated fadeIn">
+                    
+                </div>
+                <div id="tabs-2" class="tabs_content animated fadeIn">
+                       
+                </div>
+                <div id="tabs-3" class="tabs_content animated fadeIn">
+                    
+                       
+                        
+                </div>
+                <div id="tabs-4" class="tabs_content animated fadeIn">
+                   
+                </div>
+                <div id="tabs-5" class="tabs_content animated fadeIn">
+                   
+                </div>
+                <div id="tabs-6" class="tabs_content animated fadeIn">
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <!--        Intro-->
+        <div class="main_intro">
+            <h2>Trường đại học Công Nghệ Đông Á</h2>
+            <p>Đào tạo nguồn nhân lực chất lượng cao và toàn diện, có phẩm chất đạo đức và trình độ chuyên môn giỏi đáp ứng nhu cầu của xã hội;</p>
+            <p> Phát triển nghiên cứu khoa học theo hướng ứng dụng;Đào tạo nguồn nhân lực chất lượng cao và toàn diện, có phẩm chất đạo đức và trình độ chuyên môn giỏi đáp ứng nhu cầu của xã hội; Phát triển nghiên cứu khoa học theo hướng ứng dụng; Sáng tạo công nghệ và chuyển giao tri thức, phục vụ sự phát triển của Đất nước.</p>
+            <div class="main_intro__items">
+                <div class="intro_item">
+                    <div class="intro_item__backgroud" style="background-image: url(styles/images/thongtin1.png)"></div>
+                    <div class="intro_item__content">
+                        <div class="intro_text">
+                       
+                        </div>
+                        <div class="button intro_button">
+                            <div class="button_bcg"></div>
+                            <a href="#">Xem ngay<span></span><span></span><span></span></a></div>
+                    </div>
+                </div>
+                <div class="intro_item">
+                    <div class="intro_item__backgroud" style="background-image: url(styles/images/thongtin2.png)"></div>
+                    <div class="intro_item__content">
+                        <div class="intro_text">
+                           
+                        </div>
+                        <div class="button intro_button">
+                            <div class="button_bcg"></div>
+                            <a href="#">Xem ngay<span></span><span></span><span></span></a></div>
+                    </div>
+                </div>
+                <div class="intro_item">
+                    <div class="intro_item__backgroud" style="background-image: url(styles/images/thongtin3.png)"></div>
+                    <div class="intro_item__content">
+                        <div class="intro_text">
+                           
+                        </div>
+                        <div class="button intro_button">
+                            <div class="button_bcg"></div>
+                            <a href="#">Xem ngay<span></span><span></span><span></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        CTA-->
+        <div class="main_cta" style="background-image: url(styles/images/thongtin3.png)">
+            <div class="box main_cta__box">
+                <div class="slider" id="single_item">
+                    <div>
+                        <div class="cta_item">
+                            <div class="cta_item__title">Trường đại học Công Nghệ Đông Á</div>
+                            <div class="cta_item__text">Xây dựng Trường Đại học Công nghệ Đông Á theo định hướng ứng dụng đa lĩnh vực với nòng cốt là công nghệ hiện đại và ứng dụng thực tiễn sản xuất, trong đó các đơn vị chuyên môn được tổ chức thành một số Viện, Khoa và Trung tâm nghiên cứu trực thuộc.
+                                Xây dựng hình mẫu một Trường đại học ngoài công lập thành công, phát triển bền vững, tự chủ toàn diện (tài chính, tổ chức và khoa học ứng dụng) với mô hình quản trị tiên tiến, hệ thống tài chính vững mạnh, hạ tầng khuôn viên và cơ sở vật chất hiện đại ngang tầm khu vực.
+                                Hình thành một trung tâm ứng dụng và sáng tạo công nghệ có hiệu quả, từng bước thu hút nguồn tài trợ và đầu tư của Nhà nước, tổ chức, doanh nghiệp trong và ngoài nước.
+                                Xây dựng môi trường khoa học ứng dụng sáng tạo, cởi mở và quốc tế hóa; thu hút sinh viên khá giỏi, các nhà khoa học xuất sắc trong nước và quốc tế đến học tập, nghiên cứu và làm việc.
+                            </div>
+                            <div class="button cta_button">
+                                <div class="button_bcg"></div>
+                                <a href="#">Xem thêm <span></span> <span></span> <span></span> <span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cta_item">
+                            <div class="cta_item__title">Trường đại học Công Nghệ Đông Á</div>
+                            <div class="cta_item__text">Tầm nhìn Trường Đại học Công nghệ Đông Á phấn đấu trở thành một đại học theo định hướng nghiên cứu ứng dụng có thứ hạng ở Việt Nam và khu vực, với nòng cốt là công nghệ, quản trị
+                                 kinh doanh có tác động quan trọng vào phát triển nền kinh tế tri thức và góp phần phát triển kinh tế xã hội.
+                            </div>
+                            <div class="button cta_button">
+                                <div class="button_bcg"></div>
+                                <a href="#">Xem thêm <span></span> <span></span> <span></span> <span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--        Offers-->
+        <div class="main_offers">
+            <div class="box main_offers__box">
+                <h2 class="offers_title">Trường đại học Công Nghệ Đông Á</h2>
+                <div class="offers_items">
+                    <div class="offers_item">
+                        <div class="offers_image">
+                            <div class="offers_image_background"
+                                 style="background-image: url(styles/images/add1.webp)"></div>
+                        </div>
+                        <div class="offers_content">
+                     
+                            <p class="offers_text">TRƯỜNG ĐẠI HỌC CÔNG NGHỆ ĐÔNG Á: LỄ TUYÊN DƯƠNG SINH VIÊN ƯU TÚ VIỆN ĐÀO TẠO VÀ HỢP TÁC QUỐC TẾ
+                                Hoạt động Nhà trường, Tin tức - 24/03/2023
+                                Sáng nay 24/3, Ts. Đinh Văn Thành – Hiệu trưởng trường Đại học Công nghệ Đông Á đã trao giấy khen tuyên dương 10 sinh viên Viện Đào tạo </p>
+                            <div class="offers_icons">
+                             
+                            </div>
+                            <div class="offers_link"><a href="#">Đọc thêm</a></div>
+                        </div>
+                    </div>
+                    <div class="offers_item">
+                        <div class="offers_image">
+                            <div class="offers_image_background"
+                                 style="background-image: url(styles/images/add2.webp)"></div>
+                        </div>
+                        <div class="offers_content">
+                          
+                            <p class="offers_text">KHOA DU LỊCH VÀ CÔNG TY CỔ PHẦN ẨM THỰC VIỆT NHẬT KÝ KẾT HỢP TÁC GHI NHỚ LIÊN KẾT ĐÀO TẠO, HỖ TRỢ THỰC TẬP VÀ VIỆC LÀM CHO SINH VIÊN
+                                Hoạt động Nhà trường, Tin tức - 22/03/2023
+                                Ngày 21 – 3, Khoa Du lịch trường Đại học Công nghệ Đông Á đã ký kết hợp tác ghi nhớ với Công Ty Cổ phần Ẩm Thực Việt Nhật….</p>
+                            <div class="offers_icons">
+                              
+                            </div>
+                            <div class="offers_link"><a href="#">Đọc thêm</a></div>
+                        </div>
+                    </div>
+                    <div class="offers_item">
+                        <div class="offers_image">
+                            <div class="offers_image_background"
+                                 style="background-image: url(styles/images/add3.webp)"></div>
+                        </div>
+                        <div class="offers_content">
+                            
+                            <p class="offers_text">TỔ CHỨC LỚP ĐÀO TẠO TIẾNG NHẬT CHO SINH VIÊN ĐỊNH HƯỚNG LÀM VIỆC TẠI DOANH NGHIỆP NHẬT BẢN
+                                Hoạt động Nhà trường, Tin tức - 01/03/2023
+                                Ngày 27-2, Trung tâm Phát triển nguồn Nhân lực Quốc tế IHRDC – trường Đại học Công nghệ Đông Á tổ chức lớp đào tạo tiếng Nhật nhằm hỗ trợ…</p>
+                            <div class="offers_icons">
+                              
+                            </div>
+                            <div class="offers_link"><a href="#">Đọc thêm</a></div>
+                        </div>
+                    </div>
+                    <div class="offers_item">
+                        <div class="offers_image">
+                            <div class="offers_image_background"
+                                 style="background-image: url(styles/images/add4.webp)"></div>
+                        </div>
+                        <div class="offers_content">
+                          
+                            <p class="offers_text">BẾ MẠC GIẢI BÓNG ĐÁ KHOA CÔNG NGHỆ THÔNG TIN – IT LEAGUE 2023
+                                Đúng như kỳ vọng, trận chung kết bóng đá nam nằm trong khuôn khổ của giải bóng đá khoa Công nghệ Thông tin – IT League 2023 đã diễn ra…</p>
+                            <div class="offers_icons">
+                               
+                            </div>
+                            <div class="offers_link"><a href="#">Đọc thêm</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        testmonials-->
+        <div class="main_testimonials">
+            <div class="box main_testimonials__box">
+                <h2>Những người đã thành lập và phát triển</h2>
+                <div id="testimonials" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                    <div>
+                        <div class="test_item">
+                            <div class="test_item_box">
+                                <div class="test_image"><img src="styles/images/ng1.jpg" alt="">
+                                </div>
+                                <div class="test_icon"><img src="styles/images/island_t.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">Chủ tịch hội đồng Trường
+                                                            GS.TS. Đinh Văn Thuận</div>
+                                            <div class="test_date">Sinh năm 1954</div>
+                                        </div>
+                                        <div class="test_quote_title">Thông tin chính</div>
+                                        <p class="test_quote_text">1995 – 2013: TGĐ Tập đoàn POLYCO
+                                            2013 – nay: Chủ tịch HĐQT Tập đoàn POLYCO
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="test_item">
+                            <div class="test_item_box">
+                                <div class="test_image"><img src="styles/images/ng2.jpg" alt="">
+                                </div>
+                                <div class="test_icon"><img src="styles/images/island_t.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">Hiệu trưởng
+                                                TS Đinh Văn Thành</div>
+                                            <div class="test_date">Sinh năm: 1986</div>
+                                        </div>
+                                        <div class="test_quote_title">Thông tin chính</div>
+                                        <p class="test_quote_text">2015 – 2020: PHT Trường Đại học Công nghệ Đông Á
+                                            2020 – nay: Hiệu trưởng Trường Đại học Công nghệ Đông Á
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="test_item">
+                            <div class="test_item_box">
+                                <div class="test_image"><img src="styles/images/ng3.jpg" alt="">
+                                </div>
+                                <div class="test_icon"><img src="styles/images/island_t.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">Phó Hiệu trưởng
+                                                GS.VS.NGƯT. Đinh Văn Nhã</div>
+                                            <div class="test_date">Sinh năm 1948</div>
+                                        </div>
+                                        <div class="test_quote_title">Thông tin chính</div>
+                                        <p class="test_quote_text">2008 – nay: VT viện KHCN và Đào tạo Omega
+                                            2015 – nay: PHT, Chủ tịch Hội đồng Khoa học và Đào tạo 
+                                            Trường Đại học Công nghệ Đông Á.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="test_item">
+                            <div class="test_item_box">
+                                <div class="test_image"><img src="styles/images/ng4.jpg" alt="">
+                                </div>
+                                <div class="test_icon"><img src="styles/images/island_t.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">Phó Hiệu trưởng
+                                                TS Đinh Phương Thảo</div>
+                                            <div class="test_date">Sinh năm: 1978</div>
+                                        </div>
+                                        <div class="test_quote_title">Thông tin chính</div>
+                                        <p class="test_quote_text">2017 – nay: PHT Trường Đại học Công nghệ Đông Á
+                                            2003 – nay: GĐ Công ty Cổ phần Đầu tư và Thương mại Thuận Thành
+                                            2008 – nay: Chủ tịch Công ty Cổ phần SAHA 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        Hotel-->
+        <div class="main_hotel">
+            <div class="box main_hotel__box">
+                <h2 class="main_hotel_title">Môi trường đào tạo chất lượng</h2>
+                <div class="hotel_items">
+                    <div class="hotel_item">
+                        <div class="hotel_image">
+                            <img src="styles/images/anh1.webp" alt="">
+                        </div>
+                        <div class="hotel_content">
+                            <div class="hotel_title"><a href="#">Trải nghiệm văn hóa nhật bản</a></div>
+                            <div class="">Đơn vị công tác</div>
+                            <div class="hotel_location">Trịnh Văn Bô</div>
+                        </div>
+                    </div>
+                    <div class="hotel_item">
+                        <div class="hotel_image">
+                            <img src="styles/images/anh2.webp" alt="">
+                        </div>
+                        <div class="hotel_content">
+                            <div class="hotel_title"><a href="#">Trải nghiệm văn hóa nhật bản</a></div>
+                            <div class="">Đơn vị công tác</div>
+                            <div class="hotel_location">Trịnh Văn Bô</div>
+                        </div>
+                    </div>
+                    <div class="hotel_item">
+                        <div class="hotel_image">
+                            <img src="styles/images/anh3.webp" alt="">
+                        </div>
+                        <div class="hotel_content">
+                            <div class="hotel_title"><a href="#">Trải nghiệm văn hóa nhật bản</a></div>
+                            <div class="">Đơn vị công tác</div>
+                            <div class="hotel_location">Trịnh Văn Bô</div>
+                        </div>
+                    </div>
+                    <div class="hotel_item">
+                        <div class="hotel_image">
+                            <img src="styles/images/anh4.webp" alt="">
+                        </div>
+                        <div class="hotel_content">
+                            <div class="hotel_title"><a href="#">Lễ tốt nghiệp</a></div>
+                            <div class="">Đơn vị công tác</div>
+                            <div class="hotel_location">Trịnh Văn Bô</div>
+                        </div>
+                    </div>
+                    <div class="hotel_item">
+                        <div class="hotel_image">
+                            <img src="styles/images/anh5.jpg" alt="">
+                        </div>
+                        <div class="hotel_content">
+                            <div class="hotel_title"><a href="#">Trải nghiệm văn hóa nhật bản</a></div>
+                            <div class="">Đơn vị công tác</div>
+                            <div class="hotel_location">Trịnh Văn Bô</div>
+                        </div>
+                    </div>
+                    <div class="hotel_item">
+                        <div class="hotel_image">
+                            <img src="styles/images/anh6.jpg" alt="">
+                        </div>
+                        <div class="hotel_content">
+                            <div class="hotel_title"><a href="#">Trải nghiệm văn hóa nhật bản</a></div>
+                            <div class="">Đơn vị công tác</div>
+                            <div class="hotel_location">Trịnh Văn Bô</div>
+                        </div>
+                    </div>
+                    <div class="hotel_item">
+                        <div class="hotel_image">
+                            <img src="styles/images/anh7.jpg" alt="">
+                        </div>
+                        <div class="hotel_content">
+                            <div class="hotel_title"><a href="#">Lễ kỉ niệm 40 năm ndvn</a></div>
+                            <div class="">Đơn vị công tác</div>
+                            <div class="hotel_location">Trịnh Văn Bô</div>
+                        </div>
+                    </div>
+                    <div class="hotel_item">
+                        <div class="hotel_image">
+                            <img src="styles/images/anh8.jpg" alt="">
+                        </div>
+                        <div class="hotel_content">
+                            <div class="hotel_title"><a href="#">lễ tốt nghiệp</a></div>
+                            <div class="">Đơn vị công tác</div>
+                            <div class="hotel_location">Trịnh Văn Bô</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <button onclick="topFunction()" id="back_top" title="Go to top"><i class="fas fa-rocket"></i></button>
+        <div class="box footer__box">
+            <div class="footer__about">
+                <div class="footer__logo">
+                    <div class="logo">
+                        <a href="#"><img src="styles/images/logo1.jpg" width="90px" height="90px" alt=""></a>
+                    </div>
+                </div>
+             
+                <ul class="footer_social_list">
+                    <li class="footer_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="footer_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="footer_social_item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__blog">
+                <div class="footer_title">bản tin</div>
+                <div class="footer_blog__item">
+                    <div class="footer_blog__image"><img src="styles/images/thongtin3.png" width="60px" height="60px" alt=""></div>
+                    <div class="footer_blog__content">
+                        <div class="footer_blog__title"><a href="#">Thông tin trường đại học Công Nghệ Đông Á</a></div>
+                        <div class="footer_blog__date">30/04/2019</div>
+                    </div>
+                </div>
+                <div class="footer_blog__item">
+                    <div class="footer_blog__image"><img src="styles/images/thongtin2.png" width="60px" height="60px" alt=""></div>
+                    <div class="footer_blog__content">
+                        <div class="footer_blog__title"><a href="#">Thông tin trường đại học Công Nghệ Đông Á</a></div>
+                        <div class="footer_blog__date">30/04/2019</div>
+                    </div>
+                </div>
+                <div class="footer_blog__item">
+                    <div class="footer_blog__image"><img src="styles/images/thongtin1.png" width="60px" height="60px" alt=""></div>
+                    <div class="footer_blog__content">
+                        <div class="footer_blog__title"><a href="#">Thông tin trường đại học Công Nghệ Đông Á</a></div>
+                        <div class="footer_blog__date">30/04/2019</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__tags">
+                <div class="footer_title">Chuyên Nghành nổi bật</div>
+                <ul class="tags_list">
+                    <li class="tags_item"><a href="#">CNTT</a></li>
+                    <li class="tags_item"><a href="#">MARKETING</a></li>
+                    <li class="tags_item"><a href="#">CÔNG NGHỆ OTO</a></li>
+                    <li class="tags_item"><a href="#">DƯỢC HỌC</a></li>
+                    <li class="tags_item"><a href="#">QUẢN TRỊ KHÁCH SẠN</a></li>
+                    <li class="tags_item"><a href="#">ĐIỀU DƯỠNG</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <div class="footer_title">Liên hệ</div>
+                <ul class="contact_list">
+                    <li class="contact_item">
+                        <div class="contact_icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact_text">đường Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</div>
+                    </li>
+                    <li class="contact_item">
+                        <div class="contact_icon"><i class="fas fa-phone-square"></i></div>
+                        <div class="contact_text">+84 365 192 043</div>
+                    </li>
+                    <li class="contact_item">
+                        <div class="contact_icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact_text">@eaut.edu.vn</div>
+                    </li>
+                    <li class="contact_item">
+                        <div class="contact_icon"><i class="fas fa-globe-asia"></i></div>
+                        <div class="contact_text">www.eaut.tk</div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+<script src="styles/js/main_js.js"></script>
+<script>
+
+    $("#single_item").slick({
+        dots: true
+    });
+    $("#testimonials").slick({
+        dots: false
+    });
+</script>
+
+</html>
